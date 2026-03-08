@@ -21,7 +21,7 @@ retriever = vector_store.as_retriever(search_type="similarity", search_kwargs={"
 # Initialize Groq API
 # ---------------------------------------------
 client = Groq(
-    api_key="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"
+    api_key="use_your_api"
 )
 
 # ---------------------------------------------
@@ -89,5 +89,6 @@ Give a clear legal explanation.
     )
 
     return response.choices[0].message.content
+
 
 print("Embedding model and Chroma vector store initialized successfully.")
